@@ -7,7 +7,9 @@ $(document).ready(function() {
     var toppingInput = $("#topping").val();
     var addressInput = $("#address").val();
     var sauceInput = $("#sauce").val();
+    var colorInput = $("#color").val();
 
+    $(".color").css("background-color", colorInput);
     $(".name").text(nameInput);
     $(".telly").text(tellyInput);
     $(".size").text(sizeInput);
@@ -15,8 +17,9 @@ $(document).ready(function() {
     $(".topping").text(toppingInput);
     $(".address").text(addressInput);
     $(".sauce").text(sauceInput);
-    $("#pizza").hide();
-    $("#receipt").show();
+
+    $("#pizza").fadeOut("slow").hide();
+    $("#receipt").fadeIn("slow").show();
     event.preventDefault();
   });
 });

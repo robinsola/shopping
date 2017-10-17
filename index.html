@@ -8,11 +8,16 @@
     <title>Pizza Order Form</title>
   </head>
   <body>
+
     <div class="container">
       <div class="jumbotron">
         <h1>Welcome to our Pizza Shoppe</h1>
         <h6>By Robin Sola and Joe McKinney</h6>
       </div>
+      <div class="form-group">
+    <label for="color">What is your favorite color?</label>
+    <input id="color" class="form-control" type="color">
+  </div>
       <div class="well">
         <form id="pizza">
           <div class="form-type">
@@ -48,7 +53,7 @@
         </form>
       </div>
       <div id="receipt">
-        <div class="well">
+        <div class="well color">
           <p>Thank you <span class="name"></span>, for being brave enough to order a pizza from us!  There will be a <span class="size"></span> <span class="crust"></span> crust pizza with <span class="sauce"></span> sauce on up on it and <span class="topping"></span> sent to <span class="address"></span>!  If we have any questions we will call you at <span class="telly"></span>.
           </p>
         </div>
