@@ -8,7 +8,15 @@ $(document).ready(function() {
     var addressInput = $("#address").val();
     var sauceInput = $("#sauce").val();
 
-
+    $(".name").text(nameInput);
+    $(".telly").text(tellyInput);
+    $(".size").text(sizeInput);
+    $(".crust").text(crustInput);
+    $(".topping").text(toppingInput);
+    $(".address").text(addressInput);
+    $(".sauce").text(sauceInput);
+    $("#pizza").hide();
+    $("#receipt").show();
     event.preventDefault();
   });
 });
