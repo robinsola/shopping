@@ -2,12 +2,57 @@
 <html>
   <head>
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/script"></script>
+    <script src="js/script.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="test">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Pizza Order Form</title>
   </head>
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to our Pizza Shoppe</h1>
+        <h6>By Robin Sola and Joe McKinney</h6>
+      </div>
+      <div class="well">
+        <form id="pizza">
+          <div class="form-type">
+            <label for="name">What is your name?</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-type">
+            <label for="telly">What is your telly number?</label>
+            <input id="telly" class="form-control" type="text">
+          </div>
+          <div class="form-type">
+            <label for="size">Would you like S, LRG, or XLRG?</label>
+            <input id="size" class="form-control" type="text">
+          </div>
+          <div class="form-type">
+            <label for="crust">What type of crust do you want? GF, Regular gluteny, or thin gluteny?</label>
+            <input id="crust" class="form-control" type="text">
+          </div>
+          <div class="form-type">
+            <label for="sauce">Pick your sauce!</label>
+            <input id="sauce" class="form-control" type="text">
+          </div>
+          <div class="form-type">
+            <label for="topping">What topping would you like? please enter all toppings in this line seperated by a comma!</label>
+            <input id="topping" class="form-control" type="text">
+          </div>
+          <div class="form-type">
+            <label for="address">Where will we send this pizza?</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <br>
+          <button type="submit" class="btn btn-danger">ORDER MY ZZA</button>
+        </form>
+      </div>
+      <div id="receipt">
+        <div class="well">
+          <p>Thank you <span id="name"></span>, for being brave enough to order a pizza from us!  There will be a <span id="size"></span><span id="crust"></span>crust pizza with <span id="sauce"></span> sauce on up on it and <span id="topping"></span> sent to <span id="address"></span>!  If we have any questions we will call you at <span id="telly"></span> </p>
+        </div>
+      </div>
 
+    </div>
   </body>
 </html>
